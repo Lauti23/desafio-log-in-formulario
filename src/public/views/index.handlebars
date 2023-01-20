@@ -1,0 +1,48 @@
+<h1 class="challenge-title">Desafio chat con WebSockets</h1>
+
+<div class="divLogin">
+    <a href="/login">Loguearse</a>
+</div>
+
+<h2 class="title">Ingrese su producto</h2>
+<form id="form" class="form" method="post">
+    <label>Nombre del producto:</label>
+    <input name="product">
+    <label>Precio del producto:</label>
+    <input name="price">
+    <label>URL de la imágen del producto:</label>
+    <input name="url">
+    <button class="btn" type="submit">Guardar</button>
+    <label id="noData"></label>
+</form>
+
+<table id="table" class="table">
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Imágen</th>
+        <th>Eliminar</th>
+    </tr>
+    <div class="tableButtonsContainer">
+        <button id="btnRefresh"></button>
+    </div>
+    {{!-- <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> --}}
+</table>
+
+<div class="chat">
+    <p>Ingresa tu email:</p>
+    <input id="inputEmail" type="email">
+    <p id="noInfo"></p>
+    <div id="chatLogs">
+    
+    </div>
+    <form id='chatBox'>
+        <input id="message" name="message" placeholder="Escribe tu mensaje...">
+        <button id="sendMessage" type="submit">Enviar</button>
+        <div id="noInfoChat"></div>
+    </form>
+</div>
